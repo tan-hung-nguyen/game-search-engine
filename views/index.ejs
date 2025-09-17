@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/header.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/searchBox.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
     <title>Game Search Engine</title>
     <style>
-    body{
-        background-image: url('/images/header-background.png');
-        background-size: cover;
-    }
+        body {
+            background-image: url("/images/header-background.png");
+            background-size: cover;
+        }
     </style>
 </head>
+
 <body>
-    <%- include ('header.ejs') %>
+        <div class="header">
+            <div class="inner-header">
+                <%- include ('searchBox.ejs') %>
+                    <div class="info">
+                        <h2>Find Your Favorite Games</h2>
+                        <p>
+                            Discover detailed information about your favorite games, including
+                            release dates, platforms, genres, and more. Start your search now!
+                        </p>
+                    </div>
+                    <div class="categories">
+                        <h2>Find Games by</h2>
+                        <div class="dropdown">
+                            <button class="dropbtn">Categories</button>
+                            <div class="dropdown-content">
+                                <a href="/action">Action</a>
+                                <a href="/adventure">Adventure</a>
+                                <a href="/puzzle">Puzzle</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="inner-main">
+                <h2>Latest and Greatest Game In <%= new Date().getFullYear() %></h2>
+                <div class="main-container">
+                <% for(let i = 0; i < games.length; i++) { %>
+                <div class="game-card">
+
+                    </div>
+                <% } %>
+                </div>
+            </div>
+
+        </div>
 </body>
+
 </html>

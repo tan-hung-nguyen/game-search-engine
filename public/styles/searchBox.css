@@ -1,0 +1,56 @@
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.search-container{
+
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    
+}
+
+.search-container h1{
+    font-size: 4rem;
+    color: skyblue;
+}
+
+.search-bar{
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 60em;
+    background-color: #ffffff9e;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    min-width: 0;
+}
+
+.search-bar button img{
+    width: 24px;
+}
+.search-bar button{
+   border: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   background: transparent;
+   cursor: pointer;
+}

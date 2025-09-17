@@ -10,10 +10,24 @@ const BASE_URL = "https://api.gamebrain.co/v1/games";
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.render('index.ejs');
+app.get('/', async (req, res) => {
+    //const defaultGames = await axios.get(`${BASE_URL}?limit=10`, config);
+    //res.render('index.ejs', {games: defaultGames.data.results});
+    res.render('index.ejs', { games: [1,2,3,6,5,3,2,4,2,52,5] });
+});
+app.get('/search', async (req, res) => {
+    const query = req.body.query;
+    try {
+        const response = await axios.get(`${BASE_URL}?query=${query}`, config);
+        const games = response.data.results;
+        res.render('index.ejs', { games });
+    } catch (error) {
+        console.error(error); 
+        res.status(500).send("An error occurred while fetching game data.");
+    }
 });
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
+
