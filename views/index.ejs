@@ -20,7 +20,7 @@
 </head>
 
 <body>
-        <div class="header">
+        <section class="header">
             <div class="inner-header">
                 <%- include ('searchBox.ejs') %>
                     <div class="info">
@@ -42,21 +42,36 @@
                         </div>
                     </div>
             </div>
-        </div>
+        </section>
 
-        <div class="main">
+        <section class="main">
             <div class="inner-main">
-                <h2>Latest and Greatest Game In <%= new Date().getFullYear() %></h2>
+                <% if(defaultView) { %>
+                    <h2>Latest and Greatest Game In <%= new Date().getFullYear() %></h2>
+                <% } else { %>
+                    <h2>Search Results</h2>
+                <% } %>
                 <div class="main-container">
                 <% for(let i = 0; i < games.length; i++) { %>
-                <div class="game-card">
-
+                <a class="anchor" href="/game/<%= games[i].id %>/<%= encodeURIComponent(games[i].name)%>" width="100%" height="100%">
+                    <div class="game-card-container">
+                        <div class="game-card">
+                            <video class="micro-trailer" src="<%= games[i].micro_trailer %> " autoplay muted loop></video>
+                            <img src="<%= games[i].image%>" alt="<%= games[i].name %>">
+                        </div>
+                        <div class="game-info">
+                            <h3><%= games[i].name %></h3>
+                            <p>Release Year: <%= games[i].year %></p>
+                            <p>Genre: <%= games[i].genre %></p>
+                        </div>
+                
                     </div>
+                </a>
                 <% } %>
                 </div>
             </div>
 
-        </div>
+        </section>
 </body>
 
 </html>

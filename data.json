@@ -1,0 +1,355 @@
+{
+    "sorting": {
+        "key": null,
+        "direction": null
+    },
+    "active_filter_options": [],
+    "query": "",
+    "total_results": 715871,
+    "limit": 10,
+    "offset": 0,
+    "results": [
+        {
+            "id": 1268338,
+            "year": 2025.0,
+            "name": "Schedule I",
+            "genre": "Strategy",
+            "image": "https://img.gamebrain.co/games/890/schedule_i_tvgs_2024_1.jpg",
+            "link": "https://gamebrain.co/game/schedule-i",
+            "rating": {
+                "mean": 0.986839,
+                "count": 195584.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/897/schedule_i_tvgs_2024_8.jpg",
+                "https://img.gamebrain.co/games/947/schedule_i_tvgs_2024_19.jpg",
+                "https://img.gamebrain.co/games/898/schedule_i_tvgs_2024_9.jpg",
+                "https://img.gamebrain.co/games/895/schedule_i_tvgs_2024_6.jpg",
+                "https://img.gamebrain.co/games/896/schedule_i_tvgs_2024_7.jpg",
+                "https://img.gamebrain.co/games/942/schedule_i_tvgs_2024_23.jpg",
+                "https://img.gamebrain.co/games/941/schedule_i_tvgs_2024_22.jpg",
+                "https://img.gamebrain.co/games/945/schedule_i_tvgs_2024_17.jpg",
+                "https://img.gamebrain.co/games/941/schedule_i_tvgs_2024_13.jpg",
+                "https://img.gamebrain.co/games/943/schedule_i_tvgs_2024_24.jpg",
+                "https://img.gamebrain.co/games/944/schedule_i_tvgs_2024_25.jpg",
+                "https://img.gamebrain.co/games/940/schedule_i_tvgs_2024_12.jpg",
+                "https://img.gamebrain.co/games/946/schedule_i_tvgs_2024_18.jpg",
+                "https://img.gamebrain.co/games/938/schedule_i_tvgs_2024_10.jpg",
+                "https://img.gamebrain.co/games/943/schedule_i_tvgs_2024_15.jpg",
+                "https://img.gamebrain.co/games/946/schedule_i_tvgs_2024_27.jpg",
+                "https://img.gamebrain.co/games/945/schedule_i_tvgs_2024_26.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/257080424/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/fQ8_Rsg2ozE",
+            "short_description": null
+        },
+        {
+            "id": 391685,
+            "year": 2025.0,
+            "name": "Skibidi run 3D",
+            "genre": "Action",
+            "image": null,
+            "link": "https://gamebrain.co/game/skibidi-run-3d",
+            "rating": {
+                "mean": 0.972175,
+                "count": 142680.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/439/tigery_app_version_joshuatigeryking_2020_3.jpg"
+            ],
+            "micro_trailer": null,
+            "gameplay": "https://www.youtube-nocookie.com/embed/4F1nP1Hkmhs",
+            "short_description": null
+        },
+        {
+            "id": 1377630,
+            "year": 2025.0,
+            "name": "R.E.P.O.",
+            "genre": "Action",
+            "image": "https://img.gamebrain.co/games/461/r_e_p_o_semiwork_2025_6.jpg",
+            "link": "https://gamebrain.co/game/r-e-p-o",
+            "rating": {
+                "mean": 0.968132,
+                "count": 122442.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/460/r_e_p_o_semiwork_2025_5.jpg",
+                "https://img.gamebrain.co/games/458/r_e_p_o_semiwork_2025_3.jpg",
+                "https://img.gamebrain.co/games/459/r_e_p_o_semiwork_2025_4.jpg",
+                "https://img.gamebrain.co/games/457/r_e_p_o_semiwork_2025_2.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/257160735/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/pDS5t63ALLE",
+            "short_description": "R.E.P.O. is a single-player and multiplayer action game that offers cooperative gameplay for up to 6 players. In this online co-op horror game, you'll navigate through gravity-affected, terrifying environments to extract valuable items using physics-based tools, with the help of robotic enhancements. Expect marvelous game mechanics, hilarious moments, and the need for teamwork as you stay quiet and transport various objects to safety, while encountering scary monsters and purchasing upgrades with your hard-earned cash."
+        },
+        {
+            "id": 104935,
+            "year": 2023.0,
+            "name": "Baldur's Gate 3",
+            "genre": "Tactical Role Playing",
+            "image": "https://img.gamebrain.co/games/155/baldurs_gate_3_larian_2020_66.jpg",
+            "link": "https://gamebrain.co/game/baldurs-gate-3",
+            "rating": {
+                "mean": 0.9598605,
+                "count": 870314.0
+            },
+            "adult_only": true,
+            "screenshots": [
+                "https://img.gamebrain.co/games/195/baldurs_gate_3_larian_2020_112.jpg",
+                "https://img.gamebrain.co/games/258/baldurs_gate_3_larian_2020_5761.jpg",
+                "https://img.gamebrain.co/games/262/baldurs_gate_3_larian_2020_5774.jpg",
+                "https://img.gamebrain.co/games/260/baldurs_gate_3_larian_2020_5745.jpg",
+                "https://img.gamebrain.co/games/149/baldurs_gate_3_larian_2020_42.jpg",
+                "https://img.gamebrain.co/games/195/baldurs_gate_3_larian_2020_103.jpg",
+                "https://img.gamebrain.co/games/256/baldurs_gate_3_larian_2020_5750.jpg",
+                "https://img.gamebrain.co/games/258/baldurs_gate_3_larian_2020_5770.jpg",
+                "https://img.gamebrain.co/games/149/baldurs_gate_3_larian_2020_24.jpg",
+                "https://img.gamebrain.co/games/153/baldurs_gate_3_larian_2020_28.jpg",
+                "https://img.gamebrain.co/games/256/baldurs_gate_3_larian_2020_5741.jpg",
+                "https://img.gamebrain.co/games/265/baldurs_gate_3_larian_2020_5759.jpg",
+                "https://img.gamebrain.co/games/156/baldurs_gate_3_larian_2020_67.jpg",
+                "https://img.gamebrain.co/games/263/baldurs_gate_3_larian_2020_5739.jpg",
+                "https://img.gamebrain.co/games/265/baldurs_gate_3_larian_2020_5768.jpg",
+                "https://img.gamebrain.co/games/196/baldurs_gate_3_larian_2020_122.jpg",
+                "https://img.gamebrain.co/games/153/baldurs_gate_3_larian_2020_64.jpg",
+                "https://img.gamebrain.co/games/265/baldurs_gate_3_larian_2020_5777.jpg",
+                "https://img.gamebrain.co/games/257/baldurs_gate_3_larian_2020_6732.jpg",
+                "https://img.gamebrain.co/games/259/baldurs_gate_3_larian_2020_5744.jpg",
+                "https://img.gamebrain.co/games/158/baldurs_gate_3_larian_2020_65.png",
+                "https://img.gamebrain.co/games/261/baldurs_gate_3_larian_2020_5791.jpg",
+                "https://img.gamebrain.co/games/263/baldurs_gate_3_larian_2020_5757.jpg",
+                "https://img.gamebrain.co/games/193/baldurs_gate_3_larian_2020_110.jpg",
+                "https://img.gamebrain.co/games/258/baldurs_gate_3_larian_2020_5752.jpg",
+                "https://img.gamebrain.co/games/257/baldurs_gate_3_larian_2020_5742.jpg",
+                "https://img.gamebrain.co/games/262/baldurs_gate_3_larian_2020_5747.jpg",
+                "https://img.gamebrain.co/games/263/baldurs_gate_3_larian_2020_5793.jpg",
+                "https://img.gamebrain.co/games/265/baldurs_gate_3_larian_2020_5795.jpg",
+                "https://img.gamebrain.co/games/263/baldurs_gate_3_larian_2020_5775.jpg",
+                "https://img.gamebrain.co/games/194/baldurs_gate_3_larian_2020_102.jpg",
+                "https://img.gamebrain.co/games/262/baldurs_gate_3_larian_2020_5765.jpg",
+                "https://img.gamebrain.co/games/261/baldurs_gate_3_larian_2020_5755.jpg",
+                "https://img.gamebrain.co/games/268/baldurs_gate_3_larian_2020_5789.jpg",
+                "https://img.gamebrain.co/games/199/baldurs_gate_3_larian_2020_125.jpg",
+                "https://img.gamebrain.co/games/261/baldurs_gate_3_larian_2020_5764.jpg",
+                "https://img.gamebrain.co/games/264/baldurs_gate_3_larian_2020_5749.jpg",
+                "https://img.gamebrain.co/games/200/baldurs_gate_3_larian_2020_108.jpg",
+                "https://img.gamebrain.co/games/260/baldurs_gate_3_larian_2020_5790.jpg",
+                "https://img.gamebrain.co/games/196/baldurs_gate_3_larian_2020_104.jpg",
+                "https://img.gamebrain.co/games/267/baldurs_gate_3_larian_2020_5784.png",
+                "https://img.gamebrain.co/games/263/baldurs_gate_3_larian_2020_5748.jpg",
+                "https://img.gamebrain.co/games/262/baldurs_gate_3_larian_2020_5792.jpg",
+                "https://img.gamebrain.co/games/266/baldurs_gate_3_larian_2020_5796.jpg",
+                "https://img.gamebrain.co/games/198/baldurs_gate_3_larian_2020_124.jpg",
+                "https://img.gamebrain.co/games/262/baldurs_gate_3_larian_2020_5756.jpg",
+                "https://img.gamebrain.co/games/264/baldurs_gate_3_larian_2020_5776.jpg",
+                "https://img.gamebrain.co/games/260/baldurs_gate_3_larian_2020_6740.png",
+                "https://img.gamebrain.co/games/258/baldurs_gate_3_larian_2020_5743.jpg",
+                "https://img.gamebrain.co/games/194/baldurs_gate_3_larian_2020_111.jpg",
+                "https://img.gamebrain.co/games/261/baldurs_gate_3_larian_2020_5746.jpg",
+                "https://img.gamebrain.co/games/264/baldurs_gate_3_larian_2020_5794.jpg",
+                "https://img.gamebrain.co/games/268/baldurs_gate_3_larian_2020_6739.png"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256961600/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/FXyldfVAF9A",
+            "short_description": "In Baldur's Gate 3, players embark on a journey through the ruined city of Baldur's Gate and beyond. With a focus on character development and party-based combat, players engage in strategic battles, interact with a rich cast of characters, and navigate a complex narrative filled with moral dilemmas. The game utilizes a real-time with pause combat system and is set in the popular Dungeons & Dragons tabletop role-playing game universe."
+        },
+        {
+            "id": 905563,
+            "year": 2024.0,
+            "name": "Balatro",
+            "genre": "Casual Strategy",
+            "image": "https://img.gamebrain.co/games/219/balatro_localthunk_2024_26.jpg",
+            "link": "https://gamebrain.co/game/balatro",
+            "rating": {
+                "mean": 0.9370240652173913,
+                "count": 97473.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/219/balatro_localthunk_2024_44.jpg",
+                "https://img.gamebrain.co/games/223/balatro_localthunk_2024_39.jpg",
+                "https://img.gamebrain.co/games/218/balatro_localthunk_2024_43.jpg",
+                "https://img.gamebrain.co/games/220/balatro_localthunk_2024_27.jpg",
+                "https://img.gamebrain.co/games/223/balatro_localthunk_2024_48.jpg",
+                "https://img.gamebrain.co/games/225/balatro_localthunk_2024_59.jpg",
+                "https://img.gamebrain.co/games/221/balatro_localthunk_2024_55.jpg",
+                "https://img.gamebrain.co/games/219/balatro_localthunk_2024_26.jpg",
+                "https://img.gamebrain.co/games/223/balatro_localthunk_2024_66.jpg",
+                "https://img.gamebrain.co/games/220/balatro_localthunk_2024_54.jpg",
+                "https://img.gamebrain.co/games/221/balatro_localthunk_2024_28.jpg",
+                "https://img.gamebrain.co/games/219/balatro_localthunk_2024_53.jpg",
+                "https://img.gamebrain.co/games/222/balatro_localthunk_2024_65.jpg",
+                "https://img.gamebrain.co/games/221/balatro_localthunk_2024_64.jpg",
+                "https://img.gamebrain.co/games/218/balatro_localthunk_2024_61.jpg",
+                "https://img.gamebrain.co/games/217/balatro_localthunk_2024_51.jpg",
+                "https://img.gamebrain.co/games/219/balatro_localthunk_2024_62.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256974582/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/d9qb_b6bErw",
+            "short_description": "Balatro is a poker-inspired roguelike deck builder where you combine poker hands and unique Joker cards to create powerful synergies. With endless possibilities and a variety of tools at your disposal, every run is different as you aim to earn chips, beat devious blinds, and reach the final boss. The game features an in-depth campaign mode with 8 difficulties, as well as challenge, daily, and seeded runs."
+        },
+        {
+            "id": 622611,
+            "year": 2025.0,
+            "name": "Monster Hunter Wilds",
+            "genre": "Open World Hack and Slash",
+            "image": "https://img.gamebrain.co/games/58/monster_hunter_wilds_capcom_2025_63.jpg",
+            "link": "https://gamebrain.co/game/monster-hunter-wilds",
+            "rating": {
+                "mean": 0.806064409090909,
+                "count": 166366.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/100/monster_hunter_wilds_capcom_2025_111.jpg",
+                "https://img.gamebrain.co/games/107/monster_hunter_wilds_capcom_2025_109.jpg",
+                "https://img.gamebrain.co/games/99/monster_hunter_wilds_capcom_2025_110.jpg",
+                "https://img.gamebrain.co/games/102/monster_hunter_wilds_capcom_2025_104.jpg",
+                "https://img.gamebrain.co/games/104/monster_hunter_wilds_capcom_2025_106.jpg",
+                "https://img.gamebrain.co/games/58/monster_hunter_wilds_capcom_2025_63.jpg",
+                "https://img.gamebrain.co/games/101/monster_hunter_wilds_capcom_2025_112.jpg",
+                "https://img.gamebrain.co/games/103/monster_hunter_wilds_capcom_2025_105.jpg",
+                "https://img.gamebrain.co/games/59/monster_hunter_wilds_capcom_2025_64.jpg",
+                "https://img.gamebrain.co/games/105/monster_hunter_wilds_capcom_2025_107.jpg",
+                "https://img.gamebrain.co/games/106/monster_hunter_wilds_capcom_2025_108.jpg",
+                "https://img.gamebrain.co/games/101/monster_hunter_wilds_capcom_2025_103.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256988647/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/hKsq_VdD_4c",
+            "short_description": "\"Monster Hunter Wilds\" is an action RPG where players hunt down enormous monsters in various landscapes. The Deluxe Edition includes bonus layered armor, decorations, gestures, hairstyles, and more. Additionally, the Premium Deluxe Edition offers Wyverian Ears layered armor and exclusive BGM. Cosmetic DLC Packs will be available as post-launch content . Please note that bonus content may be obtainable through other means in the future."
+        },
+        {
+            "id": 1475352,
+            "year": 2025.0,
+            "name": "Abiotic Factor",
+            "genre": "Survival Role Playing Shooter",
+            "image": "https://img.gamebrain.co/games/627/abiotic_factor_playstack_2025_1.jpg",
+            "link": "https://gamebrain.co/game/abiotic-factor",
+            "rating": {
+                "mean": 0.972266,
+                "count": 31658.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/739/abiotic_factor_deepfield_2025_1145.jpg",
+                "https://img.gamebrain.co/games/737/abiotic_factor_deepfield_2025_1152.jpg",
+                "https://img.gamebrain.co/games/738/abiotic_factor_deepfield_2025_1144.jpg",
+                "https://img.gamebrain.co/games/741/abiotic_factor_deepfield_2025_1147.jpg",
+                "https://img.gamebrain.co/games/738/abiotic_factor_deepfield_2025_1153.jpg",
+                "https://img.gamebrain.co/games/737/abiotic_factor_deepfield_2025_1143.jpg",
+                "https://img.gamebrain.co/games/740/abiotic_factor_deepfield_2025_1146.jpg",
+                "https://img.gamebrain.co/games/735/abiotic_factor_deepfield_2025_1150.jpg",
+                "https://img.gamebrain.co/games/736/abiotic_factor_deepfield_2025_1142.jpg",
+                "https://img.gamebrain.co/games/743/abiotic_factor_deepfield_2025_1149.jpg",
+                "https://img.gamebrain.co/games/736/abiotic_factor_deepfield_2025_1151.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/257172169/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/BdsUYSEkQbQ",
+            "short_description": "In \"Abiotic Factor,\" players navigate a chaotic, otherworldly research lab after a containment breach, fighting off hostile anomalous entities and the Order, a militaristic sect seeking to seize powerful artifacts. As a GATE employee, it's up to you to secure the lab, protect survivors, and uncover the truth behind the catastrophe. With a mix of FPS action and adventurous exploration, prepare for a thrilling, immersive experience."
+        },
+        {
+            "id": 906298,
+            "year": 2025.0,
+            "name": "Supermarket Simulator",
+            "genre": "Casual Simulation",
+            "image": "https://img.gamebrain.co/games/529/supermarket_simulator_nokta_2024_39.jpg",
+            "link": "https://gamebrain.co/game/supermarket-simulator-2025",
+            "rating": {
+                "mean": 0.948652,
+                "count": 49778.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/528/supermarket_simulator_nokta_2024_38.jpg",
+                "https://img.gamebrain.co/games/524/supermarket_simulator_nokta_2024_34.jpg",
+                "https://img.gamebrain.co/games/526/supermarket_simulator_nokta_2024_27.jpg",
+                "https://img.gamebrain.co/games/520/supermarket_simulator_nokta_2024_30.jpg",
+                "https://img.gamebrain.co/games/527/supermarket_simulator_nokta_2024_37.jpg",
+                "https://img.gamebrain.co/games/523/supermarket_simulator_nokta_2024_33.jpg",
+                "https://img.gamebrain.co/games/525/supermarket_simulator_nokta_2024_35.jpg",
+                "https://img.gamebrain.co/games/526/supermarket_simulator_nokta_2024_36.jpg",
+                "https://img.gamebrain.co/games/522/supermarket_simulator_nokta_2024_32.jpg",
+                "https://img.gamebrain.co/games/528/supermarket_simulator_nokta_2024_29.jpg",
+                "https://img.gamebrain.co/games/521/supermarket_simulator_nokta_2024_31.jpg",
+                "https://img.gamebrain.co/games/527/supermarket_simulator_nokta_2024_28.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/257158250/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/_amVz42mg_w",
+            "short_description": "In Supermarket Simulator, design your store, order stock, and manage checkouts for a realistic supermarket experience. Optimize layout, efficiency, and customer satisfaction, while navigating real-time market fluctuations for profits."
+        },
+        {
+            "id": 1487544,
+            "year": 2025.0,
+            "name": "Crowd City",
+            "genre": "Casual Simulation",
+            "image": "https://img.gamebrain.co/games/113/crowd_city_voodoo_2018_1.jpg",
+            "link": "https://gamebrain.co/game/crowd-city",
+            "rating": {
+                "mean": 0.8929999999999999,
+                "count": 1038360.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/160/crowd_city_voodoo_2025_11.jpg",
+                "https://img.gamebrain.co/games/163/crowd_city_voodoo_2025_14.jpg",
+                "https://img.gamebrain.co/games/164/crowd_city_voodoo_2025_15.jpg",
+                "https://img.gamebrain.co/games/159/crowd_city_voodoo_2025_10.jpg",
+                "https://img.gamebrain.co/games/165/crowd_city_voodoo_2025_16.jpg",
+                "https://img.gamebrain.co/games/162/crowd_city_voodoo_2025_13.jpg",
+                "https://img.gamebrain.co/games/161/crowd_city_voodoo_2025_12.jpg",
+                "https://img.gamebrain.co/games/119/crowd_city_voodoo_2025_9.jpg"
+            ],
+            "micro_trailer": null,
+            "gameplay": "https://www.youtube-nocookie.com/embed/RgSZEOLLZiY",
+            "short_description": null
+        },
+        {
+            "id": 487617,
+            "year": 2024.0,
+            "name": "Persona 3 Reload",
+            "genre": "Role Playing",
+            "image": "https://img.gamebrain.co/games/548/persona_3_reload_atlus_2024_24.jpg",
+            "link": "https://gamebrain.co/game/persona-3-reload-2024",
+            "rating": {
+                "mean": 0.9633841666666666,
+                "count": 35359.0
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/548/persona_3_reload_atlus_2024_15.jpg",
+                "https://img.gamebrain.co/games/545/persona_3_reload_atlus_2024_21.jpg",
+                "https://img.gamebrain.co/games/550/persona_3_reload_atlus_2024_17.jpg",
+                "https://img.gamebrain.co/games/544/persona_3_reload_atlus_2024_20.jpg",
+                "https://img.gamebrain.co/games/551/persona_3_reload_atlus_2024_18.jpg",
+                "https://img.gamebrain.co/games/547/persona_3_reload_atlus_2024_14.jpg",
+                "https://img.gamebrain.co/games/552/persona_3_reload_atlus_2024_19.jpg",
+                "https://img.gamebrain.co/games/547/persona_3_reload_atlus_2024_23.jpg",
+                "https://img.gamebrain.co/games/549/persona_3_reload_atlus_2024_16.jpg",
+                "https://img.gamebrain.co/games/546/persona_3_reload_atlus_2024_22.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256997697/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/VJWxs72II8A",
+            "short_description": "\"Persona 3 Reload is a reimagined RPG where you step into a transfer student's shoes, awakening powerful abilities to explore the Dark Hour and fight for friends. This Deluxe Edition offers cutting-edge graphics, modern features, new scenes, and voiceovers, enhancing the emotional journey of the original game. However, note that in-game music tracks cannot be downloaded in any audio format.\""
+        }
+    ],
+    "sorting_options": [
+        {
+            "name": "Rating",
+            "sort": "DESC",
+            "key": "computed_rating"
+        },
+        {
+            "name": "Price",
+            "sort": "ASC",
+            "key": "price"
+        },
+        {
+            "name": "Release Date",
+            "sort": "DESC",
+            "key": "release_date"
+        }
+    ]
+}
