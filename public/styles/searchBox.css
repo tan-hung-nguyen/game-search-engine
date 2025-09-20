@@ -58,3 +58,7 @@
 a{
     text-decoration: none;
 }
+
+.search-bar button:hover{
+    background-color: #ffffff4d;
+}

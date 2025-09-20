@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <title>Game Search Engine</title>
-    <style>
-        body {
-            background-image: url("/images/header-background.png");
-            background-size: cover;
-        }
-    </style>
 </head>
 
 <body>
@@ -57,14 +51,22 @@
                     <div class="game-card-container">
                         <div class="game-card">
                             <video class="micro-trailer" src="<%= games[i].micro_trailer %> " autoplay muted loop></video>
-                            <img src="<%= games[i].image%>" alt="<%= games[i].name %>">
+                            <img class="game-image"src="<%= games[i].image%>" alt="<%= games[i].name %>">
                         </div>
                         <div class="game-info">
                             <h3><%= games[i].name %></h3>
                             <p>Release Year: <%= games[i].year %></p>
                             <p>Genre: <%= games[i].genre %></p>
+
+                            <div class="rating-container">
+                                <div class="rating-score">
+                                    <h3><%= Math.round((games[i].rating.mean) * 1000) / 10 %>%</h3>
+                                    <img class="rating-icon" src="/images/rating-icon.png" width="50px">
+                                    <h4><%= games[i].rating.count%> reviews</h4>
+                                </div>
+                            </div>
                         </div>
-                
+                    
                     </div>
                 </a>
                 <% } %>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/searchBox.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/game-page.css" />
     <title><%= gameName %></title>
 </head>
 <body>
@@ -37,7 +38,21 @@
     </section>
 
     <section class="main">
-       
+        <div class="inner-main">
+            <div class="game-detail-container">
+                <div class="slider">
+                    <div class="slides">
+                        <% for(let i = 0; i < game.videos.length; ++i) { %>
+                        <video class="video-trailer" src="<%= game.videos[i] %>" controls></video>
+                        <% } %>
+
+                        <% for(let i = 0; i < game.screenshots.length; ++i) { %>
+                        <img class="screenshot" src="<%= game.screenshots[i] %>" alt="Screenshot <%= i + 1 %>">
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </body>
