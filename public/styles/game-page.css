@@ -1,4 +1,86 @@
-.game-detail-container{
-    display: flex;
+#game-title{
+    text-align: left;
+    color: white;
 }
 
+.game-detail-container{
+    display: flex;
+    height: 100%;
+}
+.game-detail{
+    width: 70%;
+    height: 100%;
+}
+
+.slides{
+    background-color: #444857;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.inner-slides{
+    padding: 10px;
+}
+
+.media{
+    width: 100%;
+    border-radius: 10px;
+    max-height: 1200px;
+}
+.game-about-container{
+    background: linear-gradient(135deg, #222a36 60%, #4e5d78 100%);
+    border-radius: 10px;
+    display:flex;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider-content{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 100px;
+}
+.about{
+    width: 50%;
+}
+
+.tag{
+    margin: 10px;
+    width: auto;
+    color: black;
+}
+
+.genres{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-title-container{
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.video-and-image{
+    background-color: #222a36;
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::-webkit-scrollbar{
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 6px;
+}

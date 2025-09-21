@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', async (req, res) => {
-    //const defaultGames = await axios.get(`${BASE_URL}`, config);
+    //const defaultGames = await axios.get(`${BASE_URL}?sort=computed_rating&sort-order=desc`, config);
     //gameData = defaultGames.data.results;
     const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
     let gameData = data.results;
@@ -46,4 +46,3 @@ app.get('/game/:id/:name', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
-
