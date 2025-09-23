@@ -3,6 +3,7 @@ let fallbackVideos = window.gameData.videos;
 //handle video and image switching
 $('.video-and-image video').on('click', function() {
     let currentSrc = $(this).attr('src');
+    setActiveSliderBySrc(currentSrc);
     if($("#media-image").is(':visible'))
     {
       $("#media-video").attr('src', currentSrc);
@@ -62,12 +63,6 @@ function showImage(){
   }
 }
 
-
-$('.slider-content').on('click', function() {
-    $('.slider-content').removeClass('active');
-    $(this).addClass('active');
-});
-
 // remove image element on error
 $('img').on('error', function() {
   $(this).hide();
@@ -83,12 +78,16 @@ $("#media-video").on('error', tryNextVideo);
 
 function tryNextVideo(){
     if(currentFallbackVideoIndex < fallbackVideos.length){
+        let nextSrc = fallbackVideos[currentFallbackVideoIndex];
         $("#media-video").attr("src", fallbackVideos[currentFallbackVideoIndex]);
+        setActiveSliderBySrc(nextSrc);
         currentFallbackVideoIndex++;
     }
 }
 
-// add active class to first video element
-$(document).ready(function() {
-  setTimeout(() => {$('.slider-content').first().addClass('active')}, 500);
-});
+function setActiveSliderBySrc(src) {
+  $('.slider-content').removeClass('active');
+  $('.slider-content').filter(function() {
+    return $(this).attr('src') === src;
+  }).addClass('active');
+}
