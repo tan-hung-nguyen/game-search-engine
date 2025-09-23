@@ -1,75 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Knewave&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="/styles/searchBox.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/game-page.css" />
-    <title><%= gameName %></title>
+    <title>
+        <%= gameName %>
+    </title>
 </head>
+
 <body>
-    <section class="header">
-            <%- include('header.ejs') %>
-    </section>
+    <section class="header"><%- include('header.ejs') %></section>
 
     <section class="main">
         <div class="inner-main">
             <div class="game-detail-container">
                 <div class="game-detail">
-                    <h2 id="game-title" style="width: fit-content;"><%= game.name %></h2>
-                    <div class="slides">
+                    <h2 id="game-title" style="width: fit-content;">
+                        <%= game.name %>
+                    </h2>
+                    <div class="slides box-shadow">
                         <div class="inner-slides">
-                            <video class="media" id="media-video" src="<%= game.gameplay %>" autoplay controls></video>
-                            <img class="media" id="media-image" src="" height="1000px" style="display: none;"alt="screenshot">
-                            <div class="video-and-image">
-                                <video class="slider-content" src="<%= game.gameplay %>" height="100px"></video>
-                                    <% for(let i = 0; i < game.videos.length; ++i){ %>
-                                        <video class="slider-content" src="<%= game.videos[i]%>" height="100px"></video>
+                            <video class="media box-shadow" id="media-video" src="<%= game.gameplay %>" autoplay controls></video>
+                            <video class="media box-shadow" id="preloaded-video" src="" style="display: none;" autoplay controls></video>
+                            <img class="media box-shadow" id="media-image" src="" style="display: none; max-height: 1030px;"
+                                alt="screenshot" />
+                            <div class="video-and-image box-shadow">
+                                <video class="slider-content" src="<%= game.gameplay %>"></video>
+                                <% for(let i=0; i < game.videos.length; ++i){ %>
+                                    <video class="slider-content" src="<%= game.videos[i]%>"></video>
                                     <% } %>
-                                    <% for(let i = 0; i < game.screenshots.length; ++i){ %>
-                                        <img class="slider-content"src="<%= game.screenshots[i]%>" height="100px">
-                                    <% } %>
-                                </div>
-                            <div class="game-about-container">
-                                <img src="<%= game.image %>" width="200px" style="border-radius: 10px;" >
+                                        <% for(let i=0; i < game.screenshots.length; ++i){ %>
+                                            <img class="slider-content" src="<%= game.screenshots[i]%>"
+                                                alt="screenshot" />
+                                            <% } %>
+                            </div>
+                            <div class="game-about-container box-shadow">
+                                <img src="<%= game.image %>" width="200px" style="border-radius: 10px" />
                                 <div class="game-info about">
                                     <h3 style="color: darkcyan">ABOUT:</h3>
-                                    <p style="font-style: italic;"><%= game.description %></p> <hr>
-                                    <p><span style="color: darkcyan">DEVELOPER:</span> <%= game.developer %> </p>
-                                        <p><span style="color: darkcyan">RELEASE DATE: </span><%= game.release_date %></p>
+                                    <p style="font-style: italic">
+                                        <%= game.short_description %>
+                                    </p>
+                                    <hr />
+                                    <p>
+                                        <span style="color: darkcyan">DEVELOPER:</span>
+                                        <%= game.developer %>
+                                    </p>
+                                    <p>
+                                        <span style="color: darkcyan">RELEASE DATE: </span>
+                                        <%= game.release_date %>
+                                    </p>
                                 </div>
                                 <div class="tag">
                                     <h3>GENRES AND TAGS</h3>
                                     <div class="genres">
-                                        <% for(let i = 0; i < game.genres.length; ++i) { %>
-                                            <div class="tag-title-container"> <%= game.genres[i].name %></div>
-                                        <% } %>
-                                        <% for(let i = 0; i < game.tags.length; ++i) { %>
-                                            <div class="tag-title-container"> <%= game.tags[i].name %></div>
-                                        <% } %>
+                                        <% for(let i=0; i < game.genres.length; ++i) { %>
+                                            <div class="tag-title-container">
+                                                <%= game.genres[i].name %>
+                                            </div>
+                                            <% } %>
+                                                <% for(let i=0; i < game.tags.length; ++i) { %>
+                                                    <div class="tag-title-container">
+                                                        <%= game.tags[i].name %>
+                                                    </div>
+                                                    <% } %>
                                     </div>
                                     <h3>PLAY MODES</h3>
                                     <div class="play-modes">
-                                        <% for(let i = 0; i < game.play_modes.length; ++i) { %>
-                                            <div class="tag-title-container"> <%= game.play_modes[i].name %></div>
-                                        <% } %>
+                                        <% for(let i=0; i < game.play_modes.length; ++i) { %>
+                                            <div class="tag-title-container">
+                                                <%= game.play_modes[i].name %>
+                                            </div>
+                                            <% } %>
                                     </div>
                                 </div>
+
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="right-side box-shadow">
+                    <div class="platform-container box-shadow">
+                        <h3>Platforms:</h3>
+                        <div class="platform">
+                            <% for(let i = 0; i < game.platforms.length; ++i){ %>
+                                <img id="platform-icon" src="/images/platform-icon/<%= game.platforms[i].value %>.png" width="40px">
+                                <span class="platform-tooltip"><%= game.platforms[i].name %></span>
+                            <% } %>
+                        </div>
+                    </div>
+                    <a href="<%= game.offers[0].url %>" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="price-container box-shadow">
+                            <img src="/images/platform-icon/<%= game.offers[0].store_name%>.png" width="70px" style="padding: 10px;" alt="steam icon">
+                            <span id="price-value"> <%= game.offers[0].price.initial %> <%= game.offers[0].price.currency  %></span>               
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-
     </section>
+<script>
+  window.gameData = <%- JSON.stringify(game) %>;
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src='/js/chooseFunctionality.js'></script>
+    <script src="/js/gamePageFunctionality.js"></script>
     
 </body>
+
 </html>

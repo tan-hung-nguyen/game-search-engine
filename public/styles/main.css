@@ -8,7 +8,9 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-
+.box-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .inner-main{
     margin: 0 auto;
     background-color: #33373e;
@@ -41,7 +43,6 @@ body {
     border-radius: 20px;
     background-color: #ffffff0a;
     transition: transform 0.2s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     
 }
@@ -154,4 +155,20 @@ body {
     .game-card-container:hover .micro-trailer{
         width: 100%;
     }
+}
+
+.very-positive{
+    background-color: green;
+}
+
+.positive{
+    background-color: yellowgreen;
+}
+
+.medium{
+    background-color: orange;
+}
+
+.negative{
+    background-color: red;
 }

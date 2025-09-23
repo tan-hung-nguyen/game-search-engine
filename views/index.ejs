@@ -22,15 +22,15 @@
         <section class="main">
             <div class="inner-main">
                 <% if(defaultView) { %>
-                    <h2>Latest and Greatest Game In <%= new Date().getFullYear() %></h2>
+                    <h2>What's Hot In <%= new Date().getFullYear() %></h2>
                 <% } else { %>
                     <h2>Search Results</h2>
                 <% } %>
                 <div class="main-container">
                 <% for(let i = 0; i < games.length; i++) { %>
                 <a class="anchor" href="/game/<%= games[i].id %>/<%= encodeURIComponent(games[i].name)%>" width="100%" height="100%">
-                    <div class="game-card-container">
-                        <div class="game-card">
+                    <div class="game-card-container box-shadow">
+                        <div class="game-card box-shadow">
                             <video class="micro-trailer" src="<%= games[i].micro_trailer %> " autoplay muted loop></video>
                             <img class="game-image"src="<%= games[i].image%>" alt="<%= games[i].name %>">
                         </div>
@@ -41,7 +41,7 @@
 
                             <div class="rating-container">
                                 <div class="rating-score">
-                                    <h3><%= Math.round((games[i].rating.mean) * 1000) / 10 %>%</h3>
+                                    <h3><span id="percentage"><%= Math.round((games[i].rating.mean) * 1000) / 10 %></span>%</h3>
                                     <img class="rating-icon" src="/images/rating-icon.png" width="50px">
                                     <h4><%= games[i].rating.count%> reviews</h4>
                                 </div>
@@ -55,6 +55,8 @@
             </div>
 
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/mainPageFunctionality.js"></script>
 </body>
 
 </html>

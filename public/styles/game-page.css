@@ -1,3 +1,4 @@
+
 #game-title{
     text-align: left;
     color: white;
@@ -5,6 +6,7 @@
 
 .game-detail-container{
     display: flex;
+    justify-content: space-around;
     height: 100%;
 }
 .game-detail{
@@ -15,7 +17,6 @@
 .slides{
     background-color: #444857;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .inner-slides{
@@ -25,14 +26,14 @@
 .media{
     width: 100%;
     border-radius: 10px;
-    max-height: 1200px;
 }
+
+
 .game-about-container{
     background: linear-gradient(135deg, #222a36 60%, #4e5d78 100%);
     border-radius: 10px;
     display:flex;
     width: fit-content;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slider-content{
@@ -47,7 +48,7 @@
 .tag{
     margin: 10px;
     width: auto;
-    color: black;
+    color: rgb(0, 139, 139);
 }
 
 .genres{
@@ -72,15 +73,87 @@
     cursor: pointer;
     margin: 10px 0;
     padding: 10px 10px 0px 10px;
-    border-radius: 5px;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
-
 ::-webkit-scrollbar{
     height: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: grey;
-    border-radius: 6px;
+    border-radius: 10px;
+}
+.slider-content.active {
+  border: 2px solid white;           /* Highlight color */
+  box-shadow: 0 0 8px #4e5d78;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 75px;
+    width: 25%;
+    height: 60%;
+    background-color:#444857;
+    border-radius: 10px;
+}
+
+.price-container{
+    margin: 10px;
+    height: 80px;
+    background-color: aqua;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#price-value{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.platform-container{
+    margin: 10px;
+    height: 80px;
+    background-color: lightgreen;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.platform{
+    text-align: right;
+    width: 100%;
+}
+#platform-icon{
+    width: 20px;
+    margin: 5px;
+    position: relative;
+}
+
+.platform-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #222a36;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+#platform-icon:hover + .platform-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
