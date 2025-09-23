@@ -30,7 +30,7 @@ $('.video-and-image video').on('click', function() {
 
 $('.video-and-image img').on('click', function() {
     let currentSrc = $(this).attr('src');
-
+    setActiveSliderBySrc(currentSrc);
     if($("#media-video").is(':visible') || $("#preloaded-video").is(':visible')){
       showImage();
       $("#media-image").attr('src', currentSrc);
