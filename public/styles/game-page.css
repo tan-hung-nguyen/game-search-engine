@@ -28,11 +28,16 @@
     border-radius: 10px;
 }
 
-
+.about-and-image-container{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
 .game-about-container{
     background: linear-gradient(135deg, #222a36 60%, #4e5d78 100%);
     border-radius: 10px;
     display:flex;
+    flex-direction: column;
     width: fit-content;
 }
 
@@ -41,8 +46,15 @@
     border-radius: 10px;
     height: 100px;
 }
+
+#game-image{
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    margin-top: 25px;
+}
 .about{
-    width: 50%;
+    width: 100%;
 }
 
 .tag{
@@ -95,31 +107,64 @@
     top: 75px;
     width: 25%;
     height: 60%;
-    background-color:#444857;
-    border-radius: 10px;
+}
+
+.offer{
+    display: block;
+    margin-top: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #fff;
+    width: 70%;
+    height: 80px;
 }
 
 .price-container{
-    margin: 10px;
-    height: 80px;
-    background-color: aqua;
+    height: 100%;
+    background: linear-gradient(135deg, #4e5d78 60%, #6c7a99 100%);
     border-radius: 40px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
 }
 
-#price-value{
-    font-size: 2rem;
+.game-title{
+    font-size: 1.5rem;
     font-weight: bold;
     width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.price-value-container{
+    width: 100%;
     text-align: right;
-    padding-right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
+.price-value{
+    background-color: #2ecc40; /* Vibrant green */
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 24px;
+    box-shadow: 0 0 10px #2ecc4088;
+    transition: filter 0.2s;
+    position: relative;
+}
+
+.crossed {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: small;
+}
+.price-value:hover {
+    filter: brightness(1.15);
+    cursor: pointer;
+}
 .platform-container{
-    margin: 10px;
     height: 80px;
+    margin-top: 20px;
     background-color: lightgreen;
     border-radius: 40px;
     display: flex;
@@ -131,7 +176,7 @@
     text-align: right;
     width: 100%;
 }
-#platform-icon{
+.platform-icon{
     width: 20px;
     margin: 5px;
     position: relative;
@@ -153,7 +198,32 @@
   font-size: 0.9rem;
 }
 
+.discounted-price{
+    color: yellow
+}
+.discount-percent{
+    background: red;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    color: yellow;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 #platform-icon:hover + .platform-tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+.source{
+    display: flex;
+    justify-content: center;
+}
+
+.source-icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }

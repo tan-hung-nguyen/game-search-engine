@@ -1,6 +1,6 @@
 body {
             background-image: url("/images/header-background.png");
-            background-size: contain;
+            background-size: cover;
         }
 .main{
     margin: 20px auto;
@@ -18,6 +18,7 @@ body {
     width: 80%;
     box-sizing: border-box;
     padding: 20px;
+    height: fit-content;
 }
 .inner-main h2{
     color: red;
