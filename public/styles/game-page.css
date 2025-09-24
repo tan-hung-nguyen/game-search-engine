@@ -28,11 +28,16 @@
     border-radius: 10px;
 }
 
-
+.about-and-image-container{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
 .game-about-container{
     background: linear-gradient(135deg, #222a36 60%, #4e5d78 100%);
     border-radius: 10px;
     display:flex;
+    flex-direction: column;
     width: fit-content;
 }
 
@@ -41,8 +46,15 @@
     border-radius: 10px;
     height: 100px;
 }
+
+#game-image{
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    margin-top: 25px;
+}
 .about{
-    width: 50%;
+    width: 100%;
 }
 
 .tag{
@@ -95,8 +107,6 @@
     top: 75px;
     width: 25%;
     height: 60%;
-    background-color:#444857;
-    border-radius: 10px;
 }
 
 .price-container{

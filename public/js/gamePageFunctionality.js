@@ -64,13 +64,15 @@ function showImage(){
 }
 
 // remove image element on error
-$('img').on('error', function() {
+$(document).ready(() => { $('img').on('error', function() {
   $(this).hide();
+});
 });
 
 // Remove video element on error
-$(".video-and-image video").on('error', function() {
+$(document).ready(() => {$(".video-and-image video").on('error', function() {
   $(this).hide();
+});
 });
 
 // Handle initial video load errors
