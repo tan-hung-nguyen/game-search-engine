@@ -98,7 +98,7 @@
                         <h3>Platforms:</h3>
                         <div class="platform">
                             <% for(let i=0; i < game.platforms.length; ++i){ %>
-                                <img id="platform-icon" src="/images/platform-icon/<%= game.platforms[i].value %>.png"
+                                <img class="platform-icon" src="/images/platform-icon/<%= game.platforms[i].value %>.png"
                                     width="40px">
                                 <span class="platform-tooltip">
                                     <%= game.platforms[i].name %>
@@ -106,18 +106,32 @@
                                 <% } %>
                         </div>
                     </div>
-                    <a href="<%= game.offers[0].url %>" target="_blank" style="text-decoration: none; color: black;">
-                        <div class="price-container box-shadow">
-                            <img src="/images/platform-icon/<%= game.offers[0].store_name%>.png" width="70px"
-                                style="padding: 10px;" alt="steam icon">
-                            <span id="price-value">
-                                <%= game.offers[0].price.initial %>
-                                    <%= game.offers[0].price.currency %>
-                            </span>
-                        </div>
-                    </a>
+                    <h2 style="color: #008b8b; margin-bottom: 0px;">Visit on:</h2>
+                    <div class="source">
+                        <% for(let i = 0; i < game.official_stores.length; ++i) { %>
+                            <a href="<%= game.official_stores[i].url %>" target="_blank">
+                                <img class="source-icon" src="/images/platform-icon/<%= game.official_stores[i].source %>.png">
+                            </a>
+                            <% } %>
+
+                    </div>
                 </div>
             </div>
+        <% for(let i = 0; i < game.offers.length; ++i) { %>
+        <div class="offer">
+                        <div class="price-container box-shadow">
+                            <img src="/images/platform-icon/<%= game.offers[i].store_name%>.png" width="70px"
+                                style="padding: 10px;" alt="steam icon">
+                            <span class="game-title"><%= game.offers[i].title %></span>
+                            <span class="price-value-container">
+                                <span>Buy Now</span>
+                                <a href="<%= game.offers[i].url %>" class="price-value" target="_blank">
+                                    <span id="initial-price">$<%= game.offers[i].price.initial %></span>
+                                </a>
+                            </span>
+                        </div>
+        </div>
+               <% } %>
         </div>
     </section>
     <script>

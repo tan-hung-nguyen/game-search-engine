@@ -18,6 +18,7 @@ body {
     width: 80%;
     box-sizing: border-box;
     padding: 20px;
+    height: fit-content;
 }
 .inner-main h2{
     color: red;

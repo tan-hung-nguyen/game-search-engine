@@ -1,6 +1,15 @@
 let currentFallbackVideoIndex = 0;
 let fallbackVideos = window.gameData.videos;
-//handle video and image switching
+
+let offers = window.gameData.offers[0];
+
+if(offers.price.discount_percent > 0){
+    $("#initial-price").addClass("crossed");
+    $(".price-value").append(`<span class="discounted-price">$${offers.price.value}</span>`);
+    $(".price-value-container").append(`<span class="discount-percent">-${offers.price.discount_percent}%</span>`);
+}
+
+  //handle video and image switching
 $('.video-and-image video').on('click', function() {
     let currentSrc = $(this).attr('src');
     setActiveSliderBySrc(currentSrc);
@@ -64,15 +73,13 @@ function showImage(){
 }
 
 // remove image element on error
-$(document).ready(() => { $('img').on('error', function() {
+$('.platform-icon').on('error', function() {
   $(this).hide();
-});
 });
 
 // Remove video element on error
-$(document).ready(() => {$(".video-and-image video").on('error', function() {
+$(".video-and-image video").on('error', function() {
   $(this).hide();
-});
 });
 
 // Handle initial video load errors
