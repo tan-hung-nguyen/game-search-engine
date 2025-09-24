@@ -34,8 +34,7 @@
                                 controls></video>
                             <video class="media box-shadow" id="preloaded-video" src="" style="display: none;" autoplay
                                 controls></video>
-                            <img class="media box-shadow" id="media-image" src=""
-                                style="display: none; max-height: 1030px;" alt="screenshot" />
+                            <img class="media box-shadow" id="media-image" src="" alt="screenshot" />
                             <div class="video-and-image box-shadow">
                                 <video class="slider-content" src="<%= game.gameplay %>"></video>
                                 <% for(let i=0; i < game.videos.length; ++i){ %>
@@ -120,11 +119,11 @@
         <% for(let i = 0; i < game.offers.length; ++i) { %>
         <div class="offer">
                         <div class="price-container box-shadow">
-                            <img src="/images/platform-icon/<%= game.offers[i].store_name%>.png" width="70px"
+                            <img src="/images/platform-icon/<%= game.offers[i].store_name%>.png" width="60px"
                                 style="padding: 10px;" alt="steam icon">
                             <span class="game-title"><%= game.offers[i].title %></span>
                             <span class="price-value-container">
-                                <span>Buy Now</span>
+                                <span id="buy-now">Buy Now</span>
                                 <a href="<%= game.offers[i].url %>" class="price-value" target="_blank">
                                     <span id="initial-price">$<%= game.offers[i].price.initial %></span>
                                 </a>

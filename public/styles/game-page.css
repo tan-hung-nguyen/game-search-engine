@@ -47,6 +47,10 @@
     height: 100px;
 }
 
+#media-image{
+    display: none;
+    max-height: 1030px;
+}
 #game-image{
     border-radius: 10px;
     width: 200px;
@@ -58,7 +62,7 @@
 }
 
 .tag{
-    margin: 10px;
+    margin: 20px;
     width: auto;
     color: rgb(0, 139, 139);
 }
@@ -212,7 +216,7 @@
     border-radius: 10px;
 }
 
-#platform-icon:hover + .platform-tooltip {
+.platform-icon:hover + .platform-tooltip {
   visibility: visible;
   opacity: 1;
 }
@@ -226,4 +230,287 @@
     width: 50px;
     height: 50px;
     margin: 10px;
+}
+
+@media (max-width: 2600px)
+{
+
+    .inner-main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .game-detail-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #media-image{
+        max-height: 900px;
+    }
+    .game-detail{
+        width: 90%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .game-detail h2{
+        align-self: center;
+    }
+
+    .right-side{
+        width: 90%;
+        margin-top: -60px;
+        height: fit-content;
+        margin-bottom: 40px;
+    }
+
+    .game-about-container{
+        flex-direction: row;
+    }
+
+    .about-and-image-container{
+        width: 70%;
+    }
+
+    .platform-container{
+        height: 60px;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .offer{
+        width: 90%;
+        height: 70px;
+        align-self: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .game-about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #media-image{
+        max-height: 500px;
+    }
+    .about-and-image-container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .offer{
+        width: 90%;
+        height: 70px;
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .price-container img{
+        width: 50px;    
+    }
+
+    .game-title{
+        font-size: 1.3rem;
+    }
+
+    .price-value-container{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    #media-image{
+        max-height: 400px;
+    }
+
+    .about-and-image-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-container img{
+        width: 40px;
+    }
+
+    .game-title{
+        font-size: 1.2rem;
+    }
+
+    .slider-content{
+        height: 70px;
+    }
+    .source-icon{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .platform-container{
+        height: 60px;
+        width: 70%;
+        margin: 10px auto;
+        font-size: 0.9rem;
+    }
+    .platform-icon{
+        width: 15px;
+        margin: 2px;
+    }
+    .price-value-container{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    .discount-percent{
+        font-size: 12px;
+        padding: 5px;
+        top: -20px;
+        left: -20px;
+    }
+    .game-title{
+        font-size: 0.8rem;
+        width: auto;
+    }
+    .price-container{
+        height: 50px;
+    }
+
+    .crossed {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 700px)
+{
+    #media-image{
+        max-height: 250px;
+    }
+
+    #game-image{
+        max-width: 150px;
+        max-height: 225px;
+        margin-top: 15px;
+    }
+    .game-info{
+        font-size: medium;
+    }
+
+    .tag{
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+
+    .offer{
+        height: 60px;
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .price-container{
+        height: 50px;
+    }
+    .price-container img{
+        width: 35px;
+    }
+
+    .game-title{
+        font-size: auto;
+    }
+    .price-value-container{
+        font-size: auto;
+    }
+
+    .source-icon{
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+    .source{
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    #buy-now{
+        display: none;
+    }
+    .crossed {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 500px)
+{
+   #media-image{
+        max-height: 160px;
+   }
+
+    .slider-content{
+          height: 50px;
+    }
+
+    #game-image{
+        max-width: 100px;
+        max-height: 160px;
+        margin-top: 10px;
+    }
+
+    .game-info{
+        font-size: small;
+    }
+
+    .tag{
+        margin: 5px;
+        font-size: 0.7rem;
+    }
+
+    .platform-container{
+        height: 40px;
+        font-size: small;
+    }
+
+    .platform-icon{
+        width: 12px;
+        margin: 1px;
+    }
+    .offer{
+        height: 50px;
+        font-size: 0.8rem;
+        margin: 10px 0;
+    }
+
+    .game-title{
+        font-size: 8px;
+    }
+
+    .price-value-container{
+        height: 30px;
+        font-size: 12px;
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+
+    .source-icon{
+        width: 25px;
+        height: 25px;
+        margin: 2px;
+    }
+
+    .crossed{
+        font-size: x-small;
+    }
+
+    .discount-percent {
+        font-size: 10px;
+        padding: 3px;
+        top: 2px;
+        left: 2px;
+    }
+    
 }

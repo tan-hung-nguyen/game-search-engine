@@ -136,7 +136,7 @@
         {
             "price": {
                 "currency": "USD",
-                "discount_percent": 0,
+                "discount_percent": 1,
                 "value": 59.99,
                 "initial": 59.99
             },
