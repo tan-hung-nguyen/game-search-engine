@@ -1,15 +1,26 @@
+// Index for fallback videos in case the main video fails to load
 let currentFallbackVideoIndex = 0;
+
+// Array of fallback video URLs from the game data
 let fallbackVideos = window.gameData.videos;
 
 let offers = window.gameData.offers[0];
-
+/**
+ * Check if there are any discounts and then apply discount style.
+ * - Adds a strikethrough to the initial price if there's a discount.
+ * - Appends the discounted price and discount percent badge.
+ */
 if(offers.price.discount_percent > 0){
     $("#initial-price").addClass("crossed");
     $(".price-value").append(`<span class="discounted-price">$${offers.price.value}</span>`);
     $(".price-value-container").append(`<span class="discount-percent">-${offers.price.discount_percent}%</span>`);
 }
 
-  //handle video and image switching
+/**
+ * Handle video switching by adding click event listeners to the video thumbnails.
+ * - When a video thumbnail is clicked, switch the main video source and update the active slider.
+ * - Handles transitions between image and video, and between two video elements.
+ */
 $('.video-and-image video').on('click', function() {
     let currentSrc = $(this).attr('src');
     setActiveSliderBySrc(currentSrc);
@@ -28,6 +39,7 @@ $('.video-and-image video').on('click', function() {
             $("#media-video").fadeIn(500);
           });
       } else{
+        // Fade out the video, change the source, and fade it back in
         $("#preloaded-video").attr('src', currentSrc);
         $("#media-video")[0].pause();
           $("#media-video").fadeOut(500, () => {
@@ -37,6 +49,11 @@ $('.video-and-image video').on('click', function() {
     }
 });
 
+/**
+ * Handle image switching by adding click event listeners to image thumbnails.
+ * - When an image thumbnail is clicked, switch the main image source and update the active slider.
+ * - Handles transitions between video and image, and between two images.
+ */
 $('.video-and-image img').on('click', function() {
     let currentSrc = $(this).attr('src');
     setActiveSliderBySrc(currentSrc);
@@ -52,11 +69,18 @@ $('.video-and-image img').on('click', function() {
     }
   });
 
+  /**
+ * Hide the main image and fade in the main video.
+ */
 function hideImage(){
     $("#media-image").fadeOut(500, function() {
         $('#media-video').fadeIn(500);
     });
 }
+
+/**
+ * Show the main image and fade out any visible video.
+ */
 function showImage(){
     if($("#preloaded-video").is(':visible'))
     {
@@ -72,19 +96,30 @@ function showImage(){
   }
 }
 
-// remove image element on error
+/**
+ * Remove platform icon image element if it fails to load.
+ */
 $('.platform-icon').on('error', function() {
   $(this).hide();
 });
 
-// Remove video element on error
+/**
+ * Remove video element if it fails to load.
+ */
 $(".video-and-image video").on('error', function() {
   $(this).hide();
 });
 
-// Handle initial video load errors
+/**
+ * Handle initial video load errors by trying fallback videos.
+ * If the current video fails to load, try the next one in the fallback list.
+ */
 $("#media-video").on('error', tryNextVideo);
 
+/**
+ * Try the next fallback video source if the current one fails to load.
+ * Also updates the active slider indicator.
+ */
 function tryNextVideo(){
     if(currentFallbackVideoIndex < fallbackVideos.length){
         let nextSrc = fallbackVideos[currentFallbackVideoIndex];
@@ -94,6 +129,11 @@ function tryNextVideo(){
     }
 }
 
+
+/**
+ * Set the .active class on the slider thumbnail that matches the given src.
+ * @param {string} src - The source URL to match.
+ */
 function setActiveSliderBySrc(src) {
   $('.slider-content').removeClass('active');
   $('.slider-content').filter(function() {

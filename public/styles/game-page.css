@@ -73,6 +73,11 @@
     gap: 10px;
 }
 
+.play-modes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .tag-title-container{
     color: white;
     background-color: black;
@@ -223,6 +228,7 @@
 
 .source{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -364,7 +370,7 @@
     }
     .price-value-container{
         font-size: 0.8rem;
-        padding: 0;
+        padding-right: 10px;
     }
 
     .discount-percent{
