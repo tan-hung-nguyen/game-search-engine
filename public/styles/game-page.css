@@ -172,7 +172,7 @@
     cursor: pointer;
 }
 .platform-container{
-    height: 80px;
+    max-height: fit-content;
     margin-top: 20px;
     background-color: lightgreen;
     border-radius: 40px;
@@ -238,6 +238,39 @@
     margin: 10px;
 }
 
+.similar-games-container{
+    background: linear-gradient(135deg, #222a36 60%, #4e5d78 100%);
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.similar-game-info{
+    display:none;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #222a36cc;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 330px;
+    height: fit-content;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.game-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.game-card:hover .similar-game-info{
+    display: block;
+}
 @media (max-width: 2600px)
 {
 
@@ -292,6 +325,26 @@
         align-self: center;
         margin: 20px 0;
     }
+
+    .similar-games-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .game-card{
+        width: 300px;
+        height: 250px;
+    }
+
+    .game-image{
+        width: 300px;
+        height: 250px;
+    }
+
+    .similar-game-info{
+        width: 280px;
+        font-size: small;
+    }
 }
 
 @media (max-width: 1300px)
@@ -327,6 +380,22 @@
 
     .price-value-container{
         font-size: 1.2rem;
+    }
+
+    .game-card{
+        width: 260px;
+        height: 210px;
+    }
+
+    .game-image{
+        width: 260px;
+        height: 210px;
+    }
+    .similar-game-info{
+        width: 240px;
+        bottom: 10px;
+        left: 10px;
+        font-size: x-small;
     }
 }
 
@@ -388,6 +457,21 @@
     }
 
     .crossed {
+        font-size: x-small;
+    }
+    
+    .game-card{
+        width: 200px;
+        height: 160px;
+    }
+
+    .game-image{
+        width: 200px;
+        height: 160px;
+    }
+
+    .similar-game-info{
+        width: 180px;
         font-size: x-small;
     }
 }
@@ -453,6 +537,14 @@
 
 @media (max-width: 500px)
 {
+    .knewave-regular
+    {
+        font-size: 2rem !important;
+    }
+
+    .search-bar input{
+        font-size: 1rem !important;
+    }
    #media-image{
         max-height: 160px;
    }

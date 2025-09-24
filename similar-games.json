@@ -1,0 +1,71 @@
+{
+    "results": [
+        {
+            "id": 191843,
+            "year": 2017,
+            "name": "Assassin's Creed Origins",
+            "genre": "Open World Role Playing",
+            "image": "https://img.gamebrain.co/games/127/assassins_creed_origins_ubisoftmontreal_2017_22.jpg",
+            "link": "https://gamebrain.co/game/assassins-creed-origins",
+            "rating": {
+                "mean": 0.8360645,
+                "count": 59111
+            },
+            "adult_only": true,
+            "screenshots": [
+                "https://img.gamebrain.co/games/136/assassins_creed_origins_ubisoftmontreal_2017_67.jpg",
+                "https://img.gamebrain.co/games/135/assassins_creed_origins_ubisoftmontreal_2017_39.jpg",
+                "https://img.gamebrain.co/games/131/assassins_creed_origins_ubisoftmontreal_2017_35.jpg",
+                "https://img.gamebrain.co/games/133/assassins_creed_origins_ubisoftmontreal_2017_55.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256699360/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/3w-3qINOSMY",
+            "short_description": "Assassin's Creed Origins is a single-player historical open-world game set in ancient Egypt, boasting stellar story, mechanics, graphics, and soundtrack. The Gold Edition includes two major expansions, the Deluxe Pack, and the Season Pass. Explore a country full of mystery, pyramids, and dangers, while uncovering the origins of the Assassin's Brotherhood. However, be prepared for grinding, bugs, and some ads, while enjoying the stunning atmosphere and emotional narrative."
+        },
+        {
+            "id": 267893,
+            "year": 2020,
+            "name": "Assassin's Creed Valhalla",
+            "genre": "Open World Role Playing",
+            "image": "https://img.gamebrain.co/games/282/assassins_creed_valhalla_ubisoft_2022_3.jpg",
+            "link": "https://gamebrain.co/game/assassins-creed-valhalla",
+            "rating": {
+                "mean": 0.685674,
+                "count": 18414
+            },
+            "adult_only": true,
+            "screenshots": [
+                "https://img.gamebrain.co/games/149/assassins_creed_valhalla_ubisoftmontreal_2022_4.jpg",
+                "https://img.gamebrain.co/games/152/assassins_creed_valhalla_ubisoftmontreal_2022_7.jpg",
+                "https://img.gamebrain.co/games/150/assassins_creed_valhalla_ubisoftmontreal_2022_5.jpg",
+                "https://img.gamebrain.co/games/151/assassins_creed_valhalla_ubisoftmontreal_2022_6.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256917295/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/4DII3yLCL4A",
+            "short_description": "In Assassin's Creed Valhalla, play as Eivor, a Viking warrior, and explore the dark age England while completing missions, raids, and building your settlement. The complete edition includes the base game, season pass, ultimate cosmetics pack, and the Dawn of Ragnarök expansion, while the Ragnarok edition only includes the base game and the Dawn of Ragnarök expansion. The game also features a FREE new rogue-lite game mode, Forgotten Saga."
+        },
+        {
+            "id": 206420,
+            "year": 2020,
+            "name": "Horizon Zero Dawn",
+            "genre": "Open World Role Playing Shooter",
+            "image": "https://img.gamebrain.co/games/441/horizon_zero_dawn_guerrilla_2020_4.jpg",
+            "link": "https://gamebrain.co/game/horizon-zero-dawn",
+            "rating": {
+                "mean": 0.893741,
+                "count": 63825
+            },
+            "adult_only": false,
+            "screenshots": [
+                "https://img.gamebrain.co/games/498/horizon_zero_dawn_guerrilla_2020_49.jpg",
+                "https://img.gamebrain.co/games/490/horizon_zero_dawn_guerrilla_2020_14.jpg",
+                "https://img.gamebrain.co/games/495/horizon_zero_dawn_guerrilla_2020_19.jpg",
+                "https://img.gamebrain.co/games/494/horizon_zero_dawn_guerrilla_2020_27.jpg",
+                "https://img.gamebrain.co/games/488/horizon_zero_dawn_guerrilla_2020_12.jpg"
+            ],
+            "micro_trailer": "https://video.akamai.steamstatic.com/store_trailers/256795570/microtrailer.webm",
+            "gameplay": "https://www.youtube-nocookie.com/embed/yKLwbkbWQpc",
+            "short_description": "In Horizon Zero Dawn Complete Edition, play as Aloy, a skilled hunter in a world overrun by robotic creatures. Uncover your past, shape your destiny, and protect the future in this expansive action RPG. The Complete Edition includes the base game, the frozen wilds expansion, and additional outfits, weapons, and packs. Explore a vibrant, dangerous open world and battle unique machines with tactical attacks."
+        }
+    ]
+}

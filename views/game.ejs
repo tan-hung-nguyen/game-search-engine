@@ -131,6 +131,21 @@
                         </div>
         </div>
                <% } %>
+            <h2 style="color: white; margin: 20px 0px;">Similar Games:</h2>
+              <div class="similar-games-container box-shadow">
+                    <% for(let i = 0; i < similarGames.length; i++) { %>
+                    <a class href="/game/<%= similarGames[i].id %>/<%= encodeURIComponent(similarGames[i].name)%>">
+                        <div class="game-card">
+                            <img class="game-image" src="<%= similarGames[i].image %>" alt="<%= similarGames[i].name %>">
+                            <div class="similar-game-info" >
+                                <h3><%= similarGames[i].name %></h3>
+                                <p>Release Year: <%= similarGames[i].year %></p>
+                                <p>Genre: <%= similarGames[i].genre %></p>
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+              </div> 
         </div>
     </section>
     <script>

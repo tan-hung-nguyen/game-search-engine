@@ -139,16 +139,30 @@ body {
         flex-direction: column;
         overflow: hidden;
     }
-
     .game-card-container{
         display:block;
         box-sizing: border-box;
         height: fit-content;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .anchor{
+        width: 70%;
     }
     .game-card{
-        width: auto;
+        width:100%;
+        margin: auto;
+
     }
     
+    .search-bar input{
+        font-size: 1.2rem;
+    }
+
+    .knewave-regular
+    {
+        font-size: 2.7rem !important;
+    }
     .game-image{
         width: 100%;
     }
@@ -156,8 +170,97 @@ body {
     .game-card-container:hover .micro-trailer{
         width: 100%;
     }
+    
+
+}
+@media (max-width: 700px)
+{
+    .game-info{
+        font-size: medium;
+    }
+    .rating-container{
+        height: 130px;
+        width: 90px;
+        left: 15px;
+    }
+
+    .knewave-regular
+    {
+        font-size: 2.3rem !important;
+    }
+
+    .search-bar input{
+        font-size: 1.1rem;
+    }
+    .anchor{
+        width: 90%;
+    }
+    .rating-score{
+        width: 90px;
+        height: 70px;
+    }
+
+    .rating-score h3{
+        top: 15px;
+        font-size: 1.5rem;
+    }
+    .rating-score h4{
+        top: 15px;
+        font-size: 0.7rem;
+    }
+
+    .rating-icon{
+        top: 25px;
+        width: 35px;
+        height: 35px;
+    }
 }
 
+@media (max-width: 500px)
+{
+    .search-bar input{
+        font-size: 0.7rem;
+    }
+
+    .knewave-regular
+    {
+        font-size: 1.6rem !important;
+    }
+
+    .anchor{
+        width: 100%;
+    }
+
+    .game-info{
+        font-size: small;
+    }
+    .rating-container{
+        height: 120px;
+        width: 80px;
+        left: 10px;
+    }
+
+    .rating-score{
+        width: 80px;
+        height: 60px;
+    }
+
+    .rating-score h3{
+        top: 10px;
+        font-size: 1.2rem;
+    }
+    .rating-score h4{
+        top: -10px;
+        font-size: 0.8rem;
+    }
+
+    .rating-icon{
+        top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+}
 .very-positive{
     background-color: green;
 }

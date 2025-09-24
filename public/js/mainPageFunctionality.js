@@ -2,27 +2,27 @@
  * Iterate over each element with ID 'percentage' and change the rating color
  * based on its value.
  */
-$("#percentage").each(() => {
+$(".percentage").each(function() {
      // Get the percentage value from the element's text
-    let percentage = parseFloat($("#percentage").text());
-    ratingColor(percentage);
+    let percentage = parseFloat($(this).text());
+    ratingColor(percentage, $(this));
 })
 
 /**
  * Adds a color class to the .rating-score element based on the percentage value.
  * @param {number} percentage - The rating percentage to evaluate.
  */
-function ratingColor(percentage){
+function ratingColor(percentage, element){
     if(percentage >= 90){
-        $(".rating-score").addClass("very-positive");
+        element.addClass("very-positive");
     }
     else if (percentage >= 80){
-        $(".rating-score").addClass("positive");
+        element.addClass("positive");
     }
     else if (percentage >= 60){
-        $(".rating-score").addClass("medium");
+        element.addClass("medium");
     }
     else{
-        $(".rating-score").addClass("negative");
+        element.addClass("negative");
     }
 }

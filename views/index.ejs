@@ -28,7 +28,7 @@
                 <% } %>
                 <div class="main-container">
                 <% for(let i = 0; i < games.length; i++) { %>
-                <a class="anchor" href="/game/<%= games[i].id %>/<%= encodeURIComponent(games[i].name)%>" width="100%" height="100%">
+                <a class="anchor" href="/game/<%= games[i].id %>/<%= encodeURIComponent(games[i].name)%>">
                     <div class="game-card-container box-shadow">
                         <div class="game-card box-shadow">
                             <video class="micro-trailer" src="<%= games[i].micro_trailer %> " autoplay muted loop></video>
@@ -41,7 +41,7 @@
 
                             <div class="rating-container">
                                 <div class="rating-score">
-                                    <h3><span id="percentage"><%= Math.round((games[i].rating.mean) * 1000) / 10 %></span>%</h3>
+                                    <h3><span class="percentage"><%= Math.round((games[i].rating.mean) * 1000) / 10 %></span>%</h3>
                                     <img class="rating-icon" src="/images/rating-icon.png" width="50px">
                                     <h4><%= games[i].rating.count%> reviews</h4>
                                 </div>
