@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
  * - Renders the index.ejs view with the games data.
  */
 app.get('/', async (req, res) => {
-    //const defaultGames = await axios.get(`${BASE_URL}?sort=computed_rating&sort-order=desc`, config);
+    //const defaultGames = await axios.get(`${BASE_URL}?query=games+from+2025&sort=computed_rating&sort-order=desc`, config);
     //let gameData = defaultGames.data.results;
     const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
     let gameData = data.results;
@@ -60,7 +60,7 @@ app.get('/game/:id/:name', async (req, res) => {
         //const similarGamesData = await axios.get(`${BASE_URL}/${gameId}/similar`, config);
         //const similarGames = similarGamesData.data;
         const similarGames = JSON.parse(fs.readFileSync('./similar-games.json', 'utf8'));
-        const gameDetails = JSON.parse(fs.readFileSync('./game-detail.json', 'utf8'));
+        const gameDetails = JSON.parse(fs.readFileSync('./no-video.json', 'utf8'));
         res.render('game.ejs', { game: gameDetails, gameName: gameName, similarGames: similarGames.results });
     } catch (error) {
         res.status(500).send(error.response.data.message);

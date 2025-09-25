@@ -85,7 +85,14 @@
     padding: 10px;
     border-radius: 20px;
 }
-
+.hidden{
+    display: none;
+}
+#media-error{
+    background-color: black;
+    color: red;
+    text-align: center;
+}
 .video-and-image{
     background-color: #222a36;
     display: flex;

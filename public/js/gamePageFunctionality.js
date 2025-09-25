@@ -1,9 +1,24 @@
+// Ensure the DOM is fully loaded before executing scripts
+$(document).ready(function() {
+
+  $(document).on("error", ".icon-platform", function() {
+    $(this).hide();
+  });
 // Index for fallback videos in case the main video fails to load
 let currentFallbackVideoIndex = 0;
 
 // Array of fallback video URLs from the game data
 let fallbackVideos = window.gameData.videos;
 
+/**
+ * Index for fallback images in case all videos fail to load
+ */
+let currentFallbackImageIndex = 0;
+let fallbackImages = window.gameData.screenshots;
+
+
+
+// Access the first offer from the game data
 let offers = window.gameData.offers[0];
 /**
  * Check if there are any discounts and then apply discount style.
@@ -36,7 +51,7 @@ $('.video-and-image video').on('click', function() {
           $("#media-video").attr('src', currentSrc);
           $("#preloaded-video")[0].pause();
           $("#preloaded-video").fadeOut(500, () => {
-            $("#media-video").fadeIn(500);
+            $("#media-video").fadeIn(500);    
           });
       } else{
         // Fade out the video, change the source, and fade it back in
@@ -116,6 +131,7 @@ $(".video-and-image video").on('error', function() {
  */
 $("#media-video").on('error', tryNextVideo);
 
+
 /**
  * Try the next fallback video source if the current one fails to load.
  * Also updates the active slider indicator.
@@ -126,9 +142,42 @@ function tryNextVideo(){
         $("#media-video").attr("src", fallbackVideos[currentFallbackVideoIndex]);
         setActiveSliderBySrc(nextSrc);
         currentFallbackVideoIndex++;
-    }
+    } else {
+    // All fallback videos have been tried, hide the video element and show the image
+        $("#media-video").hide();
+        // Try to show the first screenshot image if available
+        if(currentFallbackImageIndex < fallbackImages.length){
+            setActiveSliderBySrc(fallbackImages[currentFallbackImageIndex]);
+            $("#media-image").attr("src", fallbackImages[currentFallbackImageIndex]);
+            currentFallbackImageIndex++;
+            $("#media-image").show();
+        } else {
+            $("#media-error").removeClass("hidden");
+              $("#media-image").hide();
+              $("#media-video").hide();
+        }
+}
 }
 
+// If all fallback videos have been tried, switch to the first screenshot image
+$("#media-image").on('error', tryNextImage);
+
+/**
+ * Try the next fallback image source if the current one fails to load.
+ * Also updates the active slider indicator.
+ */
+function tryNextImage(){
+ if(currentFallbackImageIndex < fallbackImages.length){
+        let nextImageSrc = fallbackImages[currentFallbackImageIndex];
+        $("#media-image").attr("src", nextImageSrc);
+        setActiveSliderBySrc(nextImageSrc);
+        currentFallbackImageIndex++;
+    } else {
+      $("#media-error").removeClass("hidden")
+        $("#media-image").hide();
+        $("#media-video").hide();
+    }
+  }
 
 /**
  * Set the .active class on the slider thumbnail that matches the given src.
@@ -140,3 +189,4 @@ function setActiveSliderBySrc(src) {
     return $(this).attr('src') === src;
   }).addClass('active');
 }
+});

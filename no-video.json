@@ -1,0 +1,155 @@
+{
+  "id": 300313,
+  "name": "BioShock",
+  "image": "https://img.gamebrain.co/games/987/bioshock_2kaustralia_2007_70.png",
+  "gameplay": "https://www.youtube-nocookie.com/embed/5AkYix-enbQ",
+  "link": "https://gamebrain.co/game/bioshock",
+  "rating": {
+    "mean": 0.9493445704440844,
+    "count": 31177,
+    "mean_players": 0.935647,
+    "count_players": 31172,
+    "mean_critics": 0.974,
+    "count_critics": 5
+  },
+  "description": "BioShock is a horror-themed first-person shooter set in a steampunk underwater dystopia. The player is urged to turn everything into a weapon: biologically modifying their own body with Plasmids, hacking devices and systems, upgrading their weapons, crafting new ammo variants, and experimenting with different battle techniques are all possible. The game is described by the developers as a spiritual successor to their previous PC title System Shock 2. BioShock received high praise in critical reviews for its atmospheric audio and visual quality, absorbing and original plot and its unique gaming experience.",
+  "short_description": "In BioShock, players explore the underwater city of Rapture and fight off enemies using an array of weapons and genetic modifications. The game features a unique blend of shooter and RPG elements, with a heavy emphasis on customization and strategy. With a morality system, multiple endings, and a rich, immersive story, BioShock offers a deep and engaging experience.",
+  "release_date": "2007-08-20",
+  "developer": "2K Boston",
+  "playtime": {
+    "percentiles": [
+      3,
+      3,
+      5,
+      7,
+      10,
+      11,
+      13,
+      19,
+      30,
+      91
+    ],
+    "min": 2,
+    "median": 10.5,
+    "max": 91,
+    "mean": 12.956522,
+    "mentions": 92
+  },
+  "platforms": [
+    {
+      "value": "xbox_360",
+      "name": "XBox 360"
+    },
+    {
+      "value": "pc",
+      "name": "PC"
+    },
+    {
+      "value": "mac_os",
+      "name": "Mac OS"
+    },
+    {
+      "value": "xbox",
+      "name": "XBox"
+    },
+    {
+      "value": "windows",
+      "name": "Windows"
+    }
+  ],
+  "tags": [],
+  "genres": [
+    {
+      "value": "role_playing",
+      "name": "Role Playing"
+    },
+    {
+      "value": "open_world",
+      "name": "Open World"
+    },
+    {
+      "value": "stealth",
+      "name": "Stealth"
+    },
+    {
+      "value": "action",
+      "name": "Action"
+    },
+    {
+      "value": "shooter",
+      "name": "Shooter"
+    },
+    {
+      "value": "first_person_shooter",
+      "name": "First Person Shooter"
+    },
+    {
+      "value": "adventure",
+      "name": "Adventure"
+    }
+  ],
+  "genre": "Open World Role Playing Shooter",
+  "themes": [
+    {
+      "value": "horror",
+      "name": "Horror"
+    },
+    {
+      "value": "science_fiction",
+      "name": "Science Fiction"
+    }
+  ],
+  "adult_only": true,
+  "play_modes": [
+    {
+      "value": "single_player",
+      "name": "Single-Player"
+    }
+  ],
+  "screenshots": [
+    "https://img.gamebrain.co/games/989/bioshock_2kaustralia_2007_67.jpg",
+    "https://img.gamebrain.co/games/982/bioshock_2kaustralia_2007_33.jpg",
+    "https://img.gamebrain.co/games/990/bioshock_2kaustralia_2007_68.jpg",
+    "https://img.gamebrain.co/games/987/bioshock_2kaustralia_2007_65.jpg",
+    "https://img.gamebrain.co/games/988/bioshock_2kaustralia_2007_57.jpg",
+    "https://img.gamebrain.co/games/984/bioshock_2kaustralia_2007_35.jpg",
+    "https://img.gamebrain.co/games/988/bioshock_2kaustralia_2007_66.jpg",
+    "https://img.gamebrain.co/games/983/bioshock_2kaustralia_2007_34.jpg",
+    "https://img.gamebrain.co/games/982/bioshock_2kaustralia_2007_15.jpg",
+    "https://img.gamebrain.co/games/986/bioshock_2kaustralia_2007_64.jpg",
+    "https://img.gamebrain.co/games/986/bioshock_2kaustralia_2007_55.jpg",
+    "https://img.gamebrain.co/games/981/bioshock_2kaustralia_2007_32.jpg",
+    "https://img.gamebrain.co/games/991/bioshock_2kaustralia_2007_69.jpg",
+    "https://img.gamebrain.co/games/980/bioshock_2kaustralia_2007_31.jpg",
+    "https://img.gamebrain.co/games/979/bioshock_2kaustralia_2007_30.jpg",
+    "https://img.gamebrain.co/games/987/bioshock_2kaustralia_2007_56.jpg",
+    "https://img.gamebrain.co/games/991/bioshock_2kaustralia_2007_29.png"
+  ],
+  "videos": [
+    "https://www.youtube-nocookie.com/embed/CoYorK3E4aM",
+    "https://www.youtube-nocookie.com/embed/lekKQEE2lZM",
+    "https://www.youtube-nocookie.com/embed/zHRNLIx6qwY",
+    "https://www.youtube-nocookie.com/embed/5AkYix-enbQ"
+  ],
+  "offers": [
+    {
+      "price": {
+        "currency": "USD",
+        "discount_percent": 0,
+        "value": 19.99,
+        "initial": 19.99
+      },
+      "store_name": "steam",
+      "platform": "PC",
+      "title": "BioShock™",
+      "url": "https://store.steampowered.com/app/7670"
+    }
+  ],
+  "official_stores": [
+    {
+      "source": "steam",
+      "url": "https://store.steampowered.com/app/7670"
+    }
+  ],
+  "micro_trailer": null
+}
