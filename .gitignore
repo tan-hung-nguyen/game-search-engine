@@ -1,5 +1,8 @@
-*.json
-
+data.json
+game-detail.json
+no-video.json
+similar-games.json
+package-lock.json
 # Logs
 logs
 *.log
