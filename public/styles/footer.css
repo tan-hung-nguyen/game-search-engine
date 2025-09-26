@@ -1,0 +1,13 @@
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background: #33373e;
+    color: lightblue;
+    border-radius: 20px;
+}
+.contact > img {
+    width: 40px;
+    margin: 5px;
+}

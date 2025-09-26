@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/game-page.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
     <title>
         <%= gameName %>
     </title>
@@ -150,6 +151,9 @@
                     <% } %>
               </div> 
         </div>
+    </section>
+    <section class="footer">
+        <%- include('footer.ejs') %>
     </section>
     <script>
         window.gameData = <%- JSON.stringify(game) %>;
