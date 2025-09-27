@@ -129,7 +129,11 @@
                             <span class="price-value-container">
                                 <span id="buy-now">Buy Now</span>
                                 <a href="<%= game.offers[i].url %>" class="price-value" target="_blank">
-                                    <span id="initial-price">$<%= game.offers[0].price.initial %></span>
+                                    <% if(game.offers[i].price.initial) {%>
+                                    <span id="initial-price">$<%= game.offers[i].price.initial %></span>
+                                    <% } else {%>
+                                    <span id="price"> <%= game.offers[i].price.value %></span>
+                                    <% } %>
                                 </a>
                             </span>
                         </div>

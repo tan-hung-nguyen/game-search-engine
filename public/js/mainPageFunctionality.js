@@ -2,9 +2,9 @@
  * Iterate over each element with ID 'percentage' and change the rating color
  * based on its value.
  */
-$(".percentage").each(function() {
+$(".rating-score").each(function() {
      // Get the percentage value from the element's text
-    let percentage = parseFloat($(this).text());
+    let percentage = parseFloat($(this.children[0]).text());
     ratingColor(percentage, $(this));
 })
 
