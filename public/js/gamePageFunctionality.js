@@ -17,20 +17,6 @@ let currentFallbackImageIndex = 0;
 let fallbackImages = window.gameData.screenshots;
 
 
-
-// Access the first offer from the game data
-let offers = window.gameData.offers[0];
-/**
- * Check if there are any discounts and then apply discount style.
- * - Adds a strikethrough to the initial price if there's a discount.
- * - Appends the discounted price and discount percent badge.
- */
-if(offers.price.discount_percent > 0){
-    $("#initial-price").addClass("crossed");
-    $(".price-value").append(`<span class="discounted-price">$${offers.price.value}</span>`);
-    $(".price-value-container").append(`<span class="discount-percent">-${offers.price.discount_percent}%</span>`);
-}
-
 /**
  * Handle video switching by adding click event listeners to the video thumbnails.
  * - When a video thumbnail is clicked, switch the main video source and update the active slider.
@@ -125,6 +111,7 @@ $(".video-and-image video").on('error', function() {
   $(this).hide();
 });
 
+
 /**
  * Handle initial video load errors by trying fallback videos.
  * If the current video fails to load, try the next one in the fallback list.
@@ -139,6 +126,7 @@ $("#media-video").on('error', tryNextVideo);
 function tryNextVideo(){
     if(currentFallbackVideoIndex < fallbackVideos.length){
         let nextSrc = fallbackVideos[currentFallbackVideoIndex];
+        $("#media-video").attr("src", "");
         $("#media-video").attr("src", fallbackVideos[currentFallbackVideoIndex]);
         setActiveSliderBySrc(nextSrc);
         currentFallbackVideoIndex++;
@@ -146,16 +134,7 @@ function tryNextVideo(){
     // All fallback videos have been tried, hide the video element and show the image
         $("#media-video").hide();
         // Try to show the first screenshot image if available
-        if(currentFallbackImageIndex < fallbackImages.length){
-            setActiveSliderBySrc(fallbackImages[currentFallbackImageIndex]);
-            $("#media-image").attr("src", fallbackImages[currentFallbackImageIndex]);
-            currentFallbackImageIndex++;
-            $("#media-image").show();
-        } else {
-            $("#media-error").removeClass("hidden");
-              $("#media-image").hide();
-              $("#media-video").hide();
-        }
+        tryNextImage();
 }
 }
 
@@ -169,9 +148,11 @@ $("#media-image").on('error', tryNextImage);
 function tryNextImage(){
  if(currentFallbackImageIndex < fallbackImages.length){
         let nextImageSrc = fallbackImages[currentFallbackImageIndex];
+        $("#media-image").attr("src", "");
         $("#media-image").attr("src", nextImageSrc);
         setActiveSliderBySrc(nextImageSrc);
         currentFallbackImageIndex++;
+        $("#media-image").show();
     } else {
       $("#media-error").removeClass("hidden")
         $("#media-image").hide();

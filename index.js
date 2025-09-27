@@ -2,7 +2,6 @@
 import express from 'express';
 import axios from 'axios';
 import bodyParser from 'body-parser';
-import fs from 'fs';
 // Initialize Express app
 const app = express();
 const port = 3000;
@@ -28,7 +27,11 @@ app.get('/', async (req, res) => {
     let gameData = defaultGames.data.results;
     res.render('index.ejs', { defaultView: true, games: gameData});
     } catch (error) {
-        res.status(500).render("limitNoti.ejs");
+        if(error.response && error.response.status === 402){
+            res.status(402).render("limitNoti.ejs");
+        } else {
+            res.status(500).send("An error occurred while fetching game details.");
+        }
     }
 });
 
@@ -44,7 +47,11 @@ app.get('/search', async (req, res) => {
         let gameData = response.data.results;
         res.render('index.ejs', { games: gameData, defaultView: false });
     } catch (error) {
-        res.status(500).render("limitNoti.ejs");
+        if(error.response && error.response.status === 402){
+            res.status(402).render("limitNoti.ejs");
+        } else {
+            res.status(500).send("An error occurred while fetching game details.");
+        }
     }
 });
 
@@ -63,7 +70,12 @@ app.get('/game/:id/:name', async (req, res) => {
         const similarGames = similarGamesData.data;
         res.render('game.ejs', { game: gameDetails, gameName: gameName, similarGames: similarGames.results });
     } catch (error) {
-        res.status(500).render("limitNoti.ejs");
+        console.log(error);
+        if(error.response && error.response.status === 402){
+            res.status(402).render("limitNoti.ejs");
+        } else {
+            res.status(500).send("An error occurred while fetching game details.");
+        }
     }
 });
 
