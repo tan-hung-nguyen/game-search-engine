@@ -17,6 +17,20 @@ let currentFallbackImageIndex = 0;
 let fallbackImages = window.gameData.screenshots;
 
 
+if(fallbackVideos.length === 0 && fallbackImages.length === 0){
+    $("#media-error").removeClass("hidden")
+    $("#media-image").hide();
+    $("#media-video").hide();
+} else if (fallbackVideos.length === 0 && fallbackImages.length > 0){
+    $("#media-video").hide();
+    $("#media-image").attr("src", fallbackImages[0]);
+    setActiveSliderBySrc(fallbackImages[0]);
+    $("#media-image").show();
+} else {
+    $("#media-video").attr("src", fallbackVideos[0]);
+    setActiveSliderBySrc(fallbackVideos[0]);
+    $("#media-video").show();
+}
 /**
  * Handle video switching by adding click event listeners to the video thumbnails.
  * - When a video thumbnail is clicked, switch the main video source and update the active slider.

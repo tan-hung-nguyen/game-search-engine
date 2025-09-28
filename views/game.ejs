@@ -32,14 +32,13 @@
                     </h2>
                     <div class="slides box-shadow">
                         <div class="inner-slides">
-                            <video class="media box-shadow" id="media-video" src="<%= game.gameplay %>" autoplay controls></video>
+                            <video class="media box-shadow" id="media-video" src="" autoplay controls></video>
                             <video class="media box-shadow" id="preloaded-video" src="" style="display: none;" autoplay controls></video>
                             <img class="media box-shadow" id="media-image" src="" alt="screenshot" />
                             <div class="media box-shadow hidden" id="media-error">
                                 <h3>No Media Available</h3>
                             </div>
                             <div class="video-and-image box-shadow">
-                                <video class="slider-content" src="<%= game.gameplay %>"></video>
                                 <% for(let i=0; i < game.videos.length; ++i){ %>
                                     <video class="slider-content" src="<%= game.videos[i]%>"></video>
                                     <% } %>
