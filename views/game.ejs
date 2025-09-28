@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/game-page.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png"/>
     <title>
         <%= gameName %>
     </title>
@@ -130,7 +131,7 @@
                                     <% if(game.offers[i].price.initial) {%>
                                     <span id="initial-price">$<%= game.offers[i].price.initial %></span>
                                     <% } else {%>
-                                    <span id="price"> <%= game.offers[i].price.value %></span>
+                                    <span id="initial-price"> <%= game.offers[i].price.value %></span>
                                     <% } %>
                                 </a>
                             </span>
