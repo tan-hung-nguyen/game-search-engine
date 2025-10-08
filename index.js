@@ -2,13 +2,14 @@
 import express from 'express';
 import axios from 'axios';
 import bodyParser from 'body-parser';
-import fs from 'fs';
+import env from "dotenv";
+
 // Initialize Express app
 const app = express();
 const port = 3000;
-
+env.config();
 // API configuration
-const API_KEY = "53d05b628925485da546893507eb9249";
+const API_KEY = process.env.API_KEY;
 const config = { headers: { "x-api-key": API_KEY } };
 const BASE_URL = "https://api.gamebrain.co/v1/games";
 

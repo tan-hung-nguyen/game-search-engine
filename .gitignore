@@ -3,6 +3,7 @@ game-detail.json
 no-video.json
 similar-games.json
 package-lock.json
+.env
 # Logs
 logs
 *.log
