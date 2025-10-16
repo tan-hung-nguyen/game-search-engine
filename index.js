@@ -32,7 +32,7 @@ app.get('/', async (req, res) => {
         if(error.response && error.response.status === 402){
             res.status(402).render("limitNoti.ejs");
         } else {
-            res.status(500).send("An error occurred while fetching game details.");
+            res.status(500).send("Status code: " + error.status);
         }
     }
 });
@@ -52,7 +52,7 @@ app.get('/search', async (req, res) => {
         if(error.response && error.response.status === 402){
             res.status(402).render("limitNoti.ejs");
         } else {
-            res.status(500).send("An error occurred while fetching game details.");
+            res.status(500).send("Status code: " + error.status);
         }
     }
 });
@@ -76,7 +76,7 @@ app.get('/game/:id/:name', async (req, res) => {
         if(error.response && error.response.status === 402){
             res.status(402).render("limitNoti.ejs");
         } else {
-            res.status(500).send("An error occurred while fetching game details.");
+            res.status(500).send("Status code: " + error.status);
         }
     }
 });
