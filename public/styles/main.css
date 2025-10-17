@@ -168,10 +168,18 @@ body {
         width: 100%;
     }
 
-    .game-card-container:hover .micro-trailer{
-        width: 100%;
+    .game-card-container:hover{
+        transform: none !important;
     }
-    
+
+    .game-card-container:hover .micro-trailer{
+        display: none !important;
+    }
+
+    .game-card-container:hover .game-image{
+        display: block !important;
+    }
+
 
 }
 @media (max-width: 700px)
