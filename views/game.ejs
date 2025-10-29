@@ -157,11 +157,11 @@
     <section class="footer">
         <%- include('footer.ejs') %>
     </section>
-    <script>
+    <script defer>
         window.gameData = <%- JSON.stringify(game) %>;
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/js/gamePageFunctionality.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="/js/gamePageFunctionality.js"></script>
 
 </body>
 
